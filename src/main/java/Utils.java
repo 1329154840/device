@@ -14,7 +14,7 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
  * @since 1.0-SNAPSHOT
  */
 public class Utils {
-    public static final String clientId = "3d5a4d5e-8f35-4de4-a06a-fb69da7767f1";
+    public static final String clientId = "620e13db-f6f6-4887-b945-3358b22397d0";
     private static int qos = 1;
     private static String broker = "tcp://152.136.94.85:1883";
     private static String userName = "bupt-Iot";

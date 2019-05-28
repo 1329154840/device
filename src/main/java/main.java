@@ -1,5 +1,6 @@
 import org.eclipse.paho.client.mqttv3.MqttException;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -26,7 +27,7 @@ public class main {
                 i++;
                 msg = Utils.clientId + "/" + i;
                 Utils.publish( msg , topic);
-                TimeUnit.SECONDS.sleep(5);
+                TimeUnit.MICROSECONDS.sleep(System.currentTimeMillis()%1000);
             } catch (Exception e) {
                 e.printStackTrace();
             }
